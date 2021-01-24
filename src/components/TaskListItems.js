@@ -12,7 +12,7 @@ function TaskListItems({
       <div className={classes.wrapItem}>
         <div className={classes.wrap}>
           <input
-            checked={task.isCompleted}
+            defaultChecked={task.isCompleted}
             type="checkbox"
             onClick={() => onChangeCompleteStatus(task.id, !task.isCompleted)}
           />
